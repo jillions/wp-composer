@@ -15,8 +15,8 @@ jobs:
       - name: Setup .env
         run: |
           touch .env
+          echo $ACF
           echo $ACF >> .env
-          cat .env
       - name: Composer Install Dependencies
         uses: php-actions/composer@v6
 
