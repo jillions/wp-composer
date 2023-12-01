@@ -1,0 +1,21 @@
+name: Export DB for Local
+
+on: workflow_dispatch
+
+jobs:
+  build:
+    runs-on: ubuntu-latest  
+    env:
+      shell_script: pipelines/local.sh
+    
+    steps: 
+    - uses: actions/checkout@v2
+    - name: Export DB for Local
+      script: ./${{ env.shell_script }}
+
+  - name: 'Get Local Artifact'
+    uses: actions/upload-artifact@v3
+    with:
+      name: local-artifact
+      path: local.zip
+      retention-days: 7
