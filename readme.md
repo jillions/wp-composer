@@ -1,4 +1,4 @@
-# [Project Name Here]
+# WP Composer - Proof of Concept
 
 Author: Andrew Jillions <andrew.jillions@wpengine.com>
 
