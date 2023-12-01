@@ -29,5 +29,5 @@ jobs:
           SRC_PATH: "wp-content/"
           REMOTE_PATH: "wp-content/"
           PHP_LINT: TRUE
-          FLAGS: -azvr --inplace --delete-after --exclude=".*"
+          FLAGS: -rav --inplace --delete-after --exclude=".*"
           CACHE_CLEAR: TRUE
