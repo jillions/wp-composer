@@ -1,49 +1,51 @@
 # [Project Name Here]
 
-Author: 
+Author: Andrew Jillions <andrew.jillions@wpengine.com>
 
-Contributors: 
+Contributors:
 
 ## Branches & Build Status
 
-| Branch     | Environment  | Access | Build Status |
-| :------------- | :----------:  |  :----------:  | :----------:  |
-|  develop  | <https://devInstall.wpengine.com/>  |    U: devInstall // P: preview  | ![Deploy Dev](https://github.com/jillions/template-wpengine/actions/workflows/dev.yml/badge.svg) |
-|  staging  | <https://stgInstall.wpengine.com/>  |  U: stgInstall // P: preview  | ![Deploy Stage](https://github.com/jillions/template-wpengine/actions/workflows/stage.yml/badge.svg) |
-|  production  | <https://prdInstall.wpengine.com/>  |  U: prdInstall // P: preview  | ![Deploy Prod](https://github.com/jillions/template-wpengine/actions/workflows/prod.yml/badge.svg) |
+| Branch  |              Environment              |   Access    |                                          Build Status                                          |
+| :------ | :-----------------------------------: | :---------: | :--------------------------------------------------------------------------------------------: |
+| develop | <https://jillscomposer.wpengine.com/> | no password | ![Deploy Dev](https://github.com/jillions/wp-composer/actions/workflows/develop.yml/badge.svg) |
 
 ## Environments
+
 ### **LOCAL**
-- 
+
+- N/A
 
 ### **DEVELOPMENT**
-- <https://devInstall.wpengine.com/>
 
- 
+- N/A
+
 ### **STAGING**
-- <https://stgInstall.wpengine.com/>
- 
- 
-### **PRODUCTION**
-- <https://prdInstall.wpengine.com/>
 
+- N/A
+
+### **PRODUCTION**
+
+- <https://jillscomposer.wpengine.com/>
 
 ## Releases
 
-| Version    | Date  | Notes |
-| :------------- | :----------  |:----------  |
-|  [1.0.0](#) | TBD - UNRELEASED  | <ul><li> </li><li> </li><li> </li></ul> |
-
+| Version    | Date                        | Notes                                                                                          |
+| :--------- | :-------------------------- | :--------------------------------------------------------------------------------------------- |
+| [1.0.0](#) | December 1, 2023 - RELEASED | <ul><li>Default WP theme - POC for running composer install in GitHub Actions runner</li></ul> |
 
 ---
+
 # WordPress Core
-| Core Version | Date Installed | Notes |
-| :------------- | :----------  |:----------  |
-|  |  | <ul><li> </li></ul> |
 
+| Core Version | Date Installed | Notes               |
+| :----------- | :------------- | :------------------ |
+|              |                | <ul><li> </li></ul> |
 
 ---
+
 # WordPress Plugins
-| Plugin Name | Current Version | Last Updated | Notes |
-| :------------- | :----------  | :----------  |:----------  |
-|  |  |  | <ul><li> </li></ul> |
+
+| Plugin Name | Current Version | Last Updated | Notes               |
+| :---------- | :-------------- | :----------- | :------------------ |
+|             |                 |              | <ul><li> </li></ul> |

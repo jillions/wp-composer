@@ -24,7 +24,7 @@ jobs:
         with:
           # Deploy vars
           WPE_SSHG_KEY_PRIVATE: ${{ secrets.WPE_SSHG_KEY_PRIVATE }}
-          WPE_ENV: jillswpedev
+          WPE_ENV: jillscomposer
           # Deploy Options
           SRC_PATH: "wp-content/"
           REMOTE_PATH: "wp-content/"
