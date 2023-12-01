@@ -8,16 +8,13 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    env:
-      ACF: ${{ secrets.ACF_KEY }}
     steps:
       - uses: actions/checkout@v4
 
       - name: Setup .env
         run: |
           touch .env
-          echo ${{ env.ACF }}
-          echo ${{ env.ACF }} >> .env
+          echo ${{ secrets.ACF_KEY }} >> .env
 
       - name: Composer Install Dependencies
         uses: php-actions/composer@v6
