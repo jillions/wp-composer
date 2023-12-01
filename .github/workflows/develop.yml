@@ -15,7 +15,6 @@ jobs:
 
       - name: Setup .env
         run: |
-          rm .env
           touch .env
           echo ${{ env.ACF }}
           echo ${{ env.ACF }} >> .env
