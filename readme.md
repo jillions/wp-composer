@@ -38,14 +38,16 @@ Contributors:
 
 # WordPress Core
 
-| Core Version | Date Installed | Notes               |
-| :----------- | :------------- | :------------------ |
-|              |                | <ul><li> </li></ul> |
+| Core Version | Date Installed   | Notes                 |
+| :----------- | :--------------- | :-------------------- |
+| 6.4.1        | December 1, 2023 | <ul><li>N/A</li></ul> |
 
 ---
 
 # WordPress Plugins
 
-| Plugin Name | Current Version | Last Updated | Notes               |
-| :---------- | :-------------- | :----------- | :------------------ |
-|             |                 |              | <ul><li> </li></ul> |
+| Plugin Name          | Current Version | Last Updated     | Notes                 |
+| :------------------- | :-------------- | :--------------- | :-------------------- |
+| ACF Pro              | 6.2.4           | December 1, 2023 | <ul><li>N/A</li></ul> |
+| Yoast                | 21.6            | December 1, 2023 | <ul><li>N/A</li></ul> |
+| Yoast Duplicate Post | 4.5             | December 1, 2023 | <ul><li>N/A</li></ul> |
