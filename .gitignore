@@ -33,7 +33,7 @@ Thumbs.db
 .vscode
 
 # composer local
-composer*
+composer.lock
 vendor
 
 # automation

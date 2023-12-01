@@ -1,0 +1,46 @@
+{
+    "name": "wpe/demo-project",
+    "type": "project",
+    "repositories": [
+        {
+            "type": "package",
+            "package": {
+                "name": "advanced-custom-fields/advanced-custom-fields-pro",
+                "version": "6.0.5",
+                "type": "wordpress-plugin",
+                "dist": {
+                    "type": "zip",
+                    "url": "https://connect.advancedcustomfields.com/index.php?a=download&p=pro&k={%PLUGIN_ACF_KEY}&t={%VERSION}"
+                }
+            }
+        },
+        {
+            "type": "composer",
+            "url": "https://wpackagist.org"
+        }
+    ],
+    "require": {
+        "composer/installers": "~1.0",
+        "ffraenz/private-composer-installer": "^5.0",
+        "wpackagist-plugin/duplicate-post": "^4.5",
+        "wpackagist-plugin/wordpress-seo": "^19.10",
+        "advanced-custom-fields/advanced-custom-fields-pro": "*"
+    },
+    "extra": {
+        "installer-paths": {
+            "wp-content/plugins/{$name}": [
+                "type:wordpress-plugin"
+            ]
+        },
+        "private-composer-installer": {
+            "dotenv-path": ".",
+            "dotenv-name": ".env"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "ffraenz/private-composer-installer": true,
+            "composer/installers": true
+        }
+    }
+}
