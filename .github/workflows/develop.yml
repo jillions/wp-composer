@@ -12,10 +12,13 @@ jobs:
       ACF: ${{ secrets.ACF_KEY }}
     steps:
       - uses: actions/checkout@v4
+
+      - name: Setup .env
       - run: |
+          rm .env
           touch .env
-          echo $ACF
-          echo $ACF >> .env
+          echo ${{ env.ACF }}
+          echo ${{ env.ACF }} >> .env
 
       - name: Composer Install Dependencies
         uses: php-actions/composer@v6
