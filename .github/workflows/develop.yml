@@ -7,17 +7,24 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-latest  
-    
-    steps: 
-    - uses: actions/checkout@v2
-    - name: GitHub Action Deploy to WP Engine
-      uses: wpengine/github-action-wpe-site-deploy@v3.0
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: Composer Install Dependencies
+      uses: php-actions/composer@v6
       with:
-      # Deploy vars 
-        WPE_SSHG_KEY_PRIVATE: ${{ secrets.WPE_SSHG_KEY_PRIVATE }} 
-        WPE_ENV: <your_install_name_here>
-        # Deploy Options
-        PHP_LINT: TRUE
-        FLAGS: -azvr --inplace --delete --exclude=".*" --exclude-from=ignorefile.txt
-        CACHE_CLEAR: TRUE
+        command: composer install
+
+      - name: Deploy to WP Engine
+        uses: wpengine/github-action-wpe-site-deploy@v3.0
+        with:
+        # Deploy vars 
+          WPE_SSHG_KEY_PRIVATE: ${{ secrets.WPE_SSHG_KEY_PRIVATE }} 
+          WPE_ENV: jillswpedev
+          # Deploy Options
+          SRC_PATH: "wp-content/"
+          REMOTE_PATH: "wp-content/"
+          PHP_LINT: TRUE
+          FLAGS: -azvr --inplace --delete-after --exclude=".*" --exclude-from=ignorefile.txt
+          CACHE_CLEAR: TRUE

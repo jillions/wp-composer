@@ -16,6 +16,8 @@ wp-mail.php
 wp-settings.php
 wp-signup.php
 wp-trackback.php
+index.php
+readme.html
 xmlrpc.php
 license.txt
 
@@ -29,3 +31,7 @@ license.txt
 Thumbs.db
 .idea
 .vscode
+
+# composer local
+composer*
+vendor
