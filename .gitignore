@@ -35,3 +35,6 @@ Thumbs.db
 # composer local
 composer*
 vendor
+
+# automation
+pipelines
